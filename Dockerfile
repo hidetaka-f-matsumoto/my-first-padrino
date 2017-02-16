@@ -7,6 +7,5 @@ RUN echo -e 'install: --no-document\nupdate: --no-document' >> ~/.gemrc
 RUN gem install bundler
 RUN gem install padrino -v 0.13.3
 
-EXPOSE 4567
 WORKDIR /var/apps/my-first-padrino
 CMD sh ./docker_entry.sh
