@@ -17,6 +17,7 @@ source 'https://rubygems.org'
 gem 'rake'
 
 # Component requirements
+gem 'bcrypt'
 gem 'haml'
 gem 'sqlite3'
 gem 'sequel'
