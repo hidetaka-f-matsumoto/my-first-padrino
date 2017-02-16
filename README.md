@@ -1,5 +1,9 @@
 # my first padrino
 
+* Ruby/Padrino 公式の blog チュートリアル
+  * http://padrinorb.com/guides/getting-started/blog-tutorial/
+* ORM: Sequel
+
 ```
 $ cd path/to/my-first-padrino/db
 $ docker build -t hide/my-first-padrino-db .
