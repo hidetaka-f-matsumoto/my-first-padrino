@@ -20,11 +20,11 @@ MyFirstPadrino::App.controllers :posts do
   # end
   
   get :index do
-    @posts = Post.order(Sequel.desc(:id)).all
+    @posts = Post.order(Sequel.desc(:created_at)).all
     render 'posts/index'
   end
 
-  get :index, with: :id do
+  get :show, with: :id do
     @post = Post[params[:id]]
     render 'posts/show'
   end
