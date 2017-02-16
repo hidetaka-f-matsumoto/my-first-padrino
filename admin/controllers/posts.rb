@@ -12,7 +12,7 @@ MyFirstPadrino::Admin.controllers :posts do
   end
 
   post :create do
-    @post = Post.new(params[:post])
+    @post = Post.new(**params[:post], account_id: current_account.id)
     if (@post.save rescue false)
       @title = pat(:create_title, :model => "post #{@post.id}")
       flash[:success] = pat(:create_success, :model => 'Post')
