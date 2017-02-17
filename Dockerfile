@@ -1,7 +1,7 @@
 FROM ruby:2.3
 
 RUN apt-get update
-RUN apt-get install netstat
+RUN apt-get install net-tools sqlite3
 
 # gem のドキュメントなどは入れない
 RUN echo -e 'install: --no-document\nupdate: --no-document' >> ~/.gemrc
